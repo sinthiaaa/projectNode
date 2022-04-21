@@ -22,7 +22,7 @@
 <ui>
 <li><a href = "/">Blogs</a></li>
 <li> <a href="/about">About</a></li>
-<li><a href="/blogs/create">New Blog</a></li>
+<li><a href="/create">New Blog</a></li>
 
 
 </ui>
@@ -34,14 +34,8 @@
 <div class="blogs content">
 
     <h2>All Blogs</h2>
-    <% if (blogs.length > 0) { %>
-        <% blogs.forEach(blog => {%>
-
-        <h3 class="title"><%= blog.title%></h3>
-        <p class="snippet"><%= blog.snippet%></p>
-
-     <%   }) %> 
-   <% } %>
+    
+    
 
 </div>
 
