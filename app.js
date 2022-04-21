@@ -1,8 +1,8 @@
 const express = require('express');
 const req = require('express/lib/request');
 
-/*//express app
-const app = express();*/
+//express app
+const app = express();
 
 //register view engine
 app.set('view engine','ejs');
