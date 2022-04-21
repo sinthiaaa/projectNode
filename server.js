@@ -1,12 +1,12 @@
 const http = require('http');
 const fs = require('fs');
-/*const _ = require('lodash');*/
+const _ = require('lodash');
 
 const server = http.createServer((req , res )=>{
     console.log(req.url , req.method);
-/*//loadash
+//loadash
 const num = _.random(0,20);
-console.log(num);*/
+console.log(num);
 
 
 console.log(req.url , req.method);
@@ -25,7 +25,7 @@ console.log(req.url , req.method);
           path += 'about.html';
           res.statusCode= 200;
            break;
-        case '/about_bla':
+        case '/about_kk':
             res.statusCode = 301;
             res.setHeader('Location','/about');
             res.end();
@@ -59,7 +59,7 @@ console.log(req.url , req.method);
 
 
 
-   */
+  
 
 });
 server.listen(3000, 'localhost',() =>{
